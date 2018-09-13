@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>clearfix class</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0 auto;
+		}
+		body{
+			padding: 20px;
+			margin:20px;
+			line-height: 1;
+			font-family: sans-serif;
+			font-size: 1em;
+			background-color:gray;
+		}
+		.title{
+			margin: 0;
+			margin-bottom: 35px;
+			padding: 0;
+			font-size: 1.5em;
+			font-weight:bold;
+			color: #000;
+		}
+		.container1{
+			margin-top: 35px;
+			padding: 10px;
+			font-size: 1em;
+			border: 4px solid #8ac007;
+		}
+		.container >div{
+			width: 150px;
+			height: 150px;
+			padding: 20px;
+			float: left;
+			border: 1px solid #8ac007;
+		}
+		.container2{
+			display: inline-block;
+			padding: 10px;
+			width: 500px;
+			font-size: 1em;
+			border: 4px solid #8ac007;
+		}
+		.clearfix::before,
+		.clearfix::after{
+			content: "";
+			display: block;			
+		}
+		.clearfix::after{
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="title">class clearfix::</h1>
+	<div class="container clearfix">
+		<div class="left">left element</div>
+		<div class="right">right element</div>
+	</div>
+	<div class="container2">container2</div>
+</body>
+</html>

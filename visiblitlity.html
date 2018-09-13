@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>가시성 속성과 디스플레이 속성 비교하기</title>
+<style>
+	.v1{
+		visibility: hidden; border: 1px solid green;
+	}
+	.v2{
+		visibility: visible; border: 1px solid green;
+	}
+	.v3{
+		display: none; border: 1px solid green;
+	}
+</style>
+</head>
+<body>
+	<div class="v1"><!--보이지 않도록 설정 : 공간 있음-->
+		<img src="../img/favorite.jpg">
+	</div>
+	<div class="v2">
+		<img src="../img/favorite.jpg">
+	</div>
+	<div class="v3"><!--보이지 않도록 설정 : 공간 삭제-->
+		<img src="../img/favorite.jpg">
+	</div>
+</body>
+</html>

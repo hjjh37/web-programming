@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+	 td{
+	 	border: 1px solid blue;
+	 }
+		#tb1{
+			table-layout: auto;
+			border-collapse: separate;
+			empty-cells: hide;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		#tb2{
+			table-layout: auto;
+			border-collapse: separate;
+			empty-cells : show;
+		}
+	</style>
+</head>
+<body>
+	<table id="tb1" border="1" width="300px">
+		<tr>
+			<td>국어</td>
+			<td>영어</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>수학</td>
+		</tr>
+	</table>
+	<table id="tb2" border="1">
+		<tr>
+			<td>국어</td>
+			<td>영어</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>수학</td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>

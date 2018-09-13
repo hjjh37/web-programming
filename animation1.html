@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style>
+		.container{
+			width: 300px;
+			height: 300px;
+			line-height: 300px;
+			padding: 50px;
+			background: pink;
+			position: relative;
+			
+			animation: boxmove 2s ease-in-out infinite alternate;
+		}
+		@-webkit-keyframes boxmove{
+			form{
+				left:0px;
+			}to{
+				left:300px;
+			}
+		}
+		@keyframes boxmove{
+			form{
+				left:0px;
+			}to{
+				left:300px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">animation box</div>
+	<p><strong>TIP</strong>IE 9 version x</p>
+</body>
+</html>

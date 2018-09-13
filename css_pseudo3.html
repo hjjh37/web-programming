@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale=1.0>
+	<style>
+		.pseudo1{
+			width: 400px;
+			height:200px;
+			background: black;
+			color: white;
+			font-weight: bold;
+			box-shadow: 10px 20px
+		}
+		.pseudo1:hover{
+			width: 800px;
+			height: 100px;
+			background: pink;
+			transition: width 2s;
+		}
+		a:link{
+			text-decoration: none;
+			color: black;
+		}
+		a:visited{
+			color: black;
+		}
+		a:hover{
+			background-color: pink;
+		}
+		a:active{
+			background-color: skyblue;
+		}
+		#content{
+			width: 400px;
+			height: 500px;
+			background-color: yellow;
+			overflow: hidden;
+		}
+		#left{
+			width: 200px;
+			height: 500px;
+			background-color: gray;
+			float: left;
+		}
+		#right{
+			width: 150px;
+			height: 500px;
+			background-color: hotpink;
+			float: left;
+		}
+	}
+	</style>
+</head>
+<body>
+	<h2>pseudo selector</h2>
+	<div class="pseudo1">가상 클래스를 이용한 애니메이션</div>
+
+	<span><a href="http://www.naver.com">네이버</a></span>
+	<div id="content">
+		content
+		<div id="left">
+			left
+		</div>
+		<div id="right">
+			right
+		</div>
+	</div>
+
+</body>
+</html>

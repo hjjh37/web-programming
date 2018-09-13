@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+		td, th{
+			border: 1px solid red;
+		}
+		#tb1{
+			table-layout: auto;
+			border: 2px solid green;
+			border-spacing: 10px;
+			margin-bottom: 10px;
+		}
+		#tb2{
+			border: 2px solid green;
+			table-layout: fixed;
+			width: 200px;
+			border-spacing: 20px 40px;/*좌우 상하*/
+		}
+	</style>
+
+</head>
+<body>
+	<table style id="tb1">
+		<tr>
+			<th>table border-spacing</th>
+			<td>10px;</td>
+		</tr>
+	</table>
+	<table id="tb2">
+		<tr>
+			<th>table border-spacing</th>
+			<td>20px 40px</td>
+		</tr>
+	</table>
+</body>
+</html>

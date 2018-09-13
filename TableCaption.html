@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+	th{
+		font-weight: bold;
+		text-align: center;
+	}
+	td,th{
+		border: 2px solid black;
+	}
+		#c1{
+			border: 3px solid red;
+			caption-side: top;
+			border-collapse: separate;
+			margin-bottom: 2px;
+		}
+		#c2{
+			border: 3px solid blue;
+			caption-side: bottom;
+			border-collapse: collapse; /*separate보다 얇아보임*/
+			margin-bottom: 2px;
+
+		}
+	</style>
+</head>
+<body>
+	<table id="c1" border="1" width="300px">
+		<caption>[table 1-1]</caption>
+		<tr>
+			<th>University</th> <th>Contact</th> <th>Country</th>
+		</tr>
+		<tr>
+			<td>서울대학교</td> <td>홍현성</td> <td>KOREA</td>
+		</tr>
+	</table>
+	<table id="c2" border="1" width="300px">
+		<caption>[table 1-1]</caption>
+		<tr>
+			<th>University</th> <th>Contact</th> <th>Country</th>
+		</tr>
+		<tr>
+			<td>서울대학교</td> <td>홍현성</td> <td>KOREA</td>
+		</tr>
+	</table>
+</body>
+</html>
